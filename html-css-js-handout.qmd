@@ -56,4 +56,12 @@ p {
 document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 ```
 
-# HTML Elements
+# HTML
+
+## HTML Document
+
+An HTML document is declaired by 
+
+## HTML Elements
+
+An HTML element is defined by a pair of opening and closing tags and the content within.
