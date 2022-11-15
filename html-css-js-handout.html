@@ -134,19 +134,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="takeaway" class="level1">
 <h1>Takeaway</h1>
 <ul>
-<li>HTML, CSS and JavaScripts are the three most popular <em>languanges</em> behind almost every single website.</li>
-<li>Web browsers hold the <em>dictionary</em> to translate and put on the good-looking appearance of a website.</li>
-<li>Under the hood (of web browsers like Chrome, Safari, or Edge), they are plain-text scripts which you can open &amp; edit with any <b>text editor</b>.</li>
+<li>HTML, CSS and JavaScripts are the most popular <em>languanges</em> behind almost every website.</li>
+<li>Web browsers (Chrome, Safari, or Edge) hold the <em>dictionary</em> to understand these languages and put on the nice-looking appearance of websites.</li>
+<li>Under the hood, they are plain texts which you can view &amp; edit with any <b>text editor</b>.</li>
 </ul>
 </section>
 <section id="introducing-the-band" class="level1">
 <h1>Introducing the Band</h1>
 <p>In a webpage</p>
 <ul>
-<li><strong>HTML</strong> (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) lays out contents and structure</li>
-<li><strong>CSS</strong> (<strong>C</strong>asacading <strong>S</strong>tyle <strong>S</strong>heets) describe the style of the contents</li>
-<li><strong>JavaScript</strong> further adds interactivity to the page</li>
+<li><strong>HTML</strong> (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) lays out its contents and structure</li>
+<li><strong>CSS</strong> (<strong>C</strong>asacading <strong>S</strong>tyle <strong>S</strong>heets) describe the style of its contents</li>
+<li><strong>JavaScript</strong> further adds interactivity and functionalities</li>
 </ul>
+<p>You can <span class="emoji" data-emoji="eyes">👀</span> these source code of a web page from your browser. For example, in Chrome,</p>
+<ul>
+<li>You can right click a white space on the page and choose <strong>View Page Source</strong> (this will show you the entire HTML document of that page)</li>
+<li>You can also right click a link, an image or anything on the page and choose <strong>Inspect</strong> (this will highlight the thing you clicked and show you all related source code)</li>
+</ul>
+<p>If the code file looks too complicated and scary, don’t panic. We will start from the basic.</p>
 <section id="html" class="level2">
 <h2 class="anchored" data-anchor-id="html">HTML</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
@@ -159,6 +165,25 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;p&gt;</span>An exciting paragraph of text.<span class="kw">&lt;/p&gt;</span></span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/body&gt;</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>HTML documents usually have file extension <code>.html</code></p></li>
+<li><p>An HTML document begins with <a href="https://en.wikipedia.org/wiki/Document_type_declaration">a declaration of the document type</a>: <code>&lt;!DOCTYPE html&gt;</code></p></li>
+<li><p>The first impression of an HTML document usually consist of elements organized as a series of nested <strong>containers</strong> with contents enclosed by <strong>tags</strong> (<code>&lt;&gt;</code>). <a href="#fig-html-tag">Figure&nbsp;1</a> shows the common atanomy of an HTML element.</p>
+<div id="fig-html-tag" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://www.computerhope.com/jargon/h/html-tag-breakdown.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Image source: <a href="https://www.computerhope.com/jargon/c/container-tag.htm">Computer Hope</a> obviously <span class="emoji" data-emoji="roll_eyes">🙄</span></figcaption><p></p>
+</figure>
+</div></li>
+<li><p>These tags are where the name “<strong>markup language</strong>” in HTML comes from; they are used to enrich the text by encoding the structure, formatting or relationships between different parts of a docuemnt.</p></li>
+<li><p>At a high level,</p>
+<ul>
+<li>Everything on the page is contained and enclosed by <code>&lt;html&gt;   &lt;/html&gt;</code></li>
+<li><code>&lt;head&gt;   &lt;/head&gt;</code> contains <em>meta information</em> of the page such as the title, the style sheets (more on this later), and the scripts for functionalities. These are usually <em>invisible</em>.</li>
+<li><code>&lt;body&gt;   &lt;/body&gt;</code> contains the contents (text, links, and images) we see and interact with on the page.</li>
+</ul></li>
+<li><p>We will go over some useful HTML tags later. For a comprehensive list, check out <a href="https://www.w3schools.com/TAGS/default.asp">W3Schools</a>.</p></li>
+</ul>
 </section>
 <section id="css" class="level2">
 <h2 class="anchored" data-anchor-id="css">CSS</h2>

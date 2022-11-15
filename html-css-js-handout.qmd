@@ -8,21 +8,31 @@ format:
 editor:
   render-on-save: true
 highlight-style: github
+from: markdown+emoji
 ---
 
 # Takeaway
 
-* HTML, CSS and JavaScripts are the three most popular _languanges_ behind almost every single website.
-* Web browsers hold the _dictionary_ to translate and put on the good-looking appearance of a website.
-* Under the hood (of web browsers like Chrome, Safari, or Edge), they are plain-text scripts which you can open & edit with any <b>text editor</b>. 
+* HTML, CSS and JavaScripts are the most popular _languanges_ behind almost every website.
+* Web browsers (Chrome, Safari, or Edge) hold the _dictionary_ to understand these languages and put on the nice-looking appearance of websites.
+* Under the hood, they are plain texts which you can view & edit with any <b>text editor</b>. 
 
 # Introducing the Band
 
 In a webpage
 
-* **HTML** (**H**yper**T**ext **M**arkup **L**anguage) lays out contents and structure
-* **CSS** (**C**asacading **S**tyle **S**heets) describe the style of the contents
-* **JavaScript** further adds interactivity to the page
+* **HTML** (**H**yper**T**ext **M**arkup **L**anguage) lays out its contents and structure
+* **CSS** (**C**asacading **S**tyle **S**heets) describe the style of its contents
+* **JavaScript** further adds interactivity and functionalities
+
+You can :eyes: these source code of a web page from your browser.
+For example, in Chrome, 
+
+* You can right click a white space on the page and choose **View Page Source** (this will show you the entire HTML document of that page)
+* You can also right click a link, an image or anything on the page and choose **Inspect** (this will highlight the thing you clicked and show you all related source code)
+
+If the code file looks too complicated and scary, don't panic.
+We will start from the basic.
 
 ## HTML
 
@@ -39,6 +49,18 @@ In a webpage
 </html>
 ```
 
+* HTML documents usually have file extension `.html`
+* An HTML document begins with [a declaration of the document type](https://en.wikipedia.org/wiki/Document_type_declaration): `<!DOCTYPE html>`
+* The first impression of an HTML document usually consist of elements organized as a series of nested **containers** with contents enclosed by **tags** (`<>`). @fig-html-tag shows the common atanomy of an HTML element.
+
+  ![Image source: [Computer Hope](https://www.computerhope.com/jargon/c/container-tag.htm)  obviously :roll_eyes:](https://www.computerhope.com/jargon/h/html-tag-breakdown.png){#fig-html-tag fig-align="center"}
+* These tags are where the name "**markup language**" in HTML comes from; they are used to enrich the text by encoding the structure, formatting or relationships between different parts of a docuemnt.
+* At a high level, 
+  * Everything on the page is contained and enclosed by `<html>   </html>`
+  * `<head>   </head>` contains _meta information_ of the page such as the title, the style sheets (more on this later), and the scripts for functionalities. These are usually _invisible_.
+  * `<body>   </body>` contains the contents (text, links, and images) we see and interact with on the page.
+* We will go over some useful HTML tags later. For a comprehensive list, check out [W3Schools](https://www.w3schools.com/TAGS/default.asp).
+ 
 ## CSS
 
 ```css
