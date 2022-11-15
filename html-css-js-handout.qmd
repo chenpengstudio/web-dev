@@ -13,7 +13,7 @@ from: markdown+emoji
 
 # Takeaway
 
-* HTML, CSS and JavaScripts are the most popular _languanges_ behind almost every website.
+* HTML, CSS and JavaScript are the most popular _languanges_ behind almost every website.
 * Web browsers (Chrome, Safari, or Edge) hold the _dictionary_ to understand these languages and put on the nice-looking appearance of websites.
 * Under the hood, they are plain texts which you can view & edit with any <b>text editor</b>. 
 
@@ -21,15 +21,15 @@ from: markdown+emoji
 
 In a webpage
 
-* **HTML** (**H**yper**T**ext **M**arkup **L**anguage) lays out its contents and structure
-* **CSS** (**C**asacading **S**tyle **S**heets) describe the style of its contents
-* **JavaScript** further adds interactivity and functionalities
+* **HTML** (**H**yper**T**ext **M**arkup **L**anguage) lays out its contents and structure (_n._)
+* **CSS** (**C**asacading **S**tyle **S**heets) describe the style of its contents (_adj._)
+* **JavaScript** further adds interactivity and functionalities (_v._)
 
 You can :eyes: these source code of a web page from your browser.
 For example, in Chrome, 
 
-* You can right click a white space on the page and choose **View Page Source** (this will show you the entire HTML document of that page)
-* You can also right click a link, an image or anything on the page and choose **Inspect** (this will highlight the thing you clicked and show you all related source code)
+* View entire HTML: **Right click** a white space on the page -> **View Page Source**. 
+* Show related code: **Right click** a link or an image on the page -> **Inspect**. 
 
 If the code file looks too complicated and scary, don't panic.
 We will start from the basic.
@@ -49,28 +49,40 @@ We will start from the basic.
 </html>
 ```
 
-* HTML documents usually have file extension `.html`
-* An HTML document begins with [a declaration of the document type](https://en.wikipedia.org/wiki/Document_type_declaration): `<!DOCTYPE html>`
-* The first impression of an HTML document usually consist of elements organized as a series of nested **containers** with contents enclosed by **tags** (`<>`). @fig-html-tag shows the common atanomy of an HTML element.
+* HTML documents have file extension `.html`
 
-  ![Image source: [Computer Hope](https://www.computerhope.com/jargon/c/container-tag.htm)  obviously :roll_eyes:](https://www.computerhope.com/jargon/h/html-tag-breakdown.png){#fig-html-tag fig-align="center"}
-* These tags are where the name "**markup language**" in HTML comes from; they are used to enrich the text by encoding the structure, formatting or relationships between different parts of a docuemnt.
+* An HTML document begins with `<!DOCTYPE html>`
+
+* An HTML document consists a series of **elements** with contents enclosed by `<tag>`'s
+
 * At a high level, 
-  * Everything on the page is contained and enclosed by `<html>   </html>`
-  * `<head>   </head>` contains _meta information_ of the page such as the title, the style sheets (more on this later), and the scripts for functionalities. These are usually _invisible_.
-  * `<body>   </body>` contains the contents (text, links, and images) we see and interact with on the page.
-* We will go over some useful HTML tags later. For a comprehensive list, check out [W3Schools](https://www.w3schools.com/TAGS/default.asp).
+  * `<html> </html>` contains everything of the page
+  * `<head> </head>` contains _information_ such as the title and style sheets. These are usually _invisible_.
+  * `<body> </body>` contains the contents (text, links, images) we see and interact
+* Always complete an HTML element with an _opening_ tag and a _closing_ tag: `<p> </p>`
+
+* We will go over some useful HTML tags. For a comprehensive list, check out [W3Schools](https://www.w3schools.com/TAGS/ref_byfunc.asp).
  
 ## CSS
 
 ```css
-body {
-    background: #ffdb12;
-}
-p {
-    color: #36342a;
-}
+h1 {color: blue; font-size: 12px;}
 ```
+
+* CSS files usually have extension `.css`
+* A CSS file consists of a list of rules about how to _style_ a HTML document.  
+
+  ![Image source: [W3Schools](https://www.w3schools.com/css/css_syntax.asp)](https://www.w3schools.com/css/img_selector.gif){#fig-css-rule fig-align="center"}
+  
+* A selector looks for tags in the HTML to apply the CSS rules
+* Enclose declarations by curly brackets `{ }` and separate them by semicolons `;`
+* In an HTML document, you can place CSS inside `<head> </head>`:
+  
+  ```html
+  <head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  ```
 
 ## JavaScript
 
@@ -78,12 +90,67 @@ p {
 document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 ```
 
-# HTML
+* It is a programing language. I will not cover JavaScript in this class.
+* [JavaScript basics](https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/) on Geeks for Geeks
+* [JavaScript tutorial](https://www.w3schools.com/js/default.asp) on W3Schools
 
-## HTML Document
+# HTML Tags
 
-An HTML document is declaired by 
+| Tag        |    Meaning/Usage |
+|:----------:|:----------:|
+| `<h1>Chapter 1</h1>` | first-level heading |
+| `<h2>Section 1</h2>` | second-level heading |
+| `<p>paragraph</p>` | start a paragraph |
+| `<b>bold text</b>` | <b>bold text</b> |
+| `<i>italic text</i>` | <i>italic text</i> |
+| `<span style="color:#5a5ad0;font-size:larger;">text</span>` | to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span>|
+| `<a href="https://www.google.com">Google</a>` | a link to <a href = "https://www.google.com">Google</a> |
+| `<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">` | <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"> | 
+| `<br>` | a line break | 
 
-## HTML Elements
+: Body tags 
 
-An HTML element is defined by a pair of opening and closing tags and the content within.
+| Tag        |    Meaning/Usage |
+|:----------:|:----------:|
+| `<title>` | title of the docuemnt| 
+| `<link rel="stylesheet" href="styles.css">` | include external style sheets| 
+
+: Head tags 
+
+# CSS Selector
+
+| Selector        |    Meaning |
+|:----------:|:----------:|
+| `p {}` | all `<p>` elements | 
+| `h1 {}` | all `<h1>` elements | 
+| e.g., `.fancy {}` | elements of `class="fancy"`| 
+| `* {}` | everything| 
+
+# CSS Property and Value
+
+| Selector        |    Meaning |
+|:----------:|:----------:|
+| `color: red` |  <span style="color: red">text color</span> | 
+| `background-color: cyan` |  <span style="background-color: cyan">background color</span> | 
+| `font-size: 1.5em` |  <span style="font-size: 1.5em">font size</span> | 
+| `font-family: Courier` |  <span style="font-family: Courier">font family</span> | 
+
+# Publish Your Webpage (GitHub)
+
+**NOTE**: The following steps are not the good practice to use GitHub. If you want to learn more, check out the [GitHub documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
+
+1. Register a GitHub account on <https://www.github.com>
+2. Sign in GitHub, and create an empty **repository** by clicking the `+` at the top left corner (don't change default settings)
+3. On the Quick Setup page, click the link [**uploading an existing file**]{style="color:blue"}
+4. Add files of your webpage by uploading them.
+5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Now your new online repo has some files.
+6. Click **Setting** under your repository name
+   ![](./images/repo-settings.png)
+7. Click **Pages** on the left in the **Code and automation** section
+   ![](./images/repo-settings-pages.png)
+8. On the right, you will see **GitHub Page**, make sure **Souce** is **Deploy from a branch**   
+   ![](./images/gh-page.png)
+9. Under the **Branch** subsection, click the drop-down (shown as **None** above), and select **main** and **/ (root)**, respectively. **Save**!
+   ![](./images/gh-page-main-branch.png)
+10. Open a new browser window/tab, type in the web URL of your published page:
+   `https://www.<YOUR GITHUB USER NAME>.github.io/<YOUR REPO NAME>/<YOUR HTML FILE NAME>`

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-99.9.9">
+<meta name="generator" content="quarto-1.2.269">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <section id="takeaway" class="level1">
 <h1>Takeaway</h1>
 <ul>
-<li>HTML, CSS and JavaScripts are the most popular <em>languanges</em> behind almost every website.</li>
+<li>HTML, CSS and JavaScript are the most popular <em>languanges</em> behind almost every website.</li>
 <li>Web browsers (Chrome, Safari, or Edge) hold the <em>dictionary</em> to understand these languages and put on the nice-looking appearance of websites.</li>
 <li>Under the hood, they are plain texts which you can view &amp; edit with any <b>text editor</b>.</li>
 </ul>
@@ -143,14 +143,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Introducing the Band</h1>
 <p>In a webpage</p>
 <ul>
-<li><strong>HTML</strong> (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) lays out its contents and structure</li>
-<li><strong>CSS</strong> (<strong>C</strong>asacading <strong>S</strong>tyle <strong>S</strong>heets) describe the style of its contents</li>
-<li><strong>JavaScript</strong> further adds interactivity and functionalities</li>
+<li><strong>HTML</strong> (<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage) lays out its contents and structure (<em>n.</em>)</li>
+<li><strong>CSS</strong> (<strong>C</strong>asacading <strong>S</strong>tyle <strong>S</strong>heets) describe the style of its contents (<em>adj.</em>)</li>
+<li><strong>JavaScript</strong> further adds interactivity and functionalities (<em>v.</em>)</li>
 </ul>
 <p>You can <span class="emoji" data-emoji="eyes">👀</span> these source code of a web page from your browser. For example, in Chrome,</p>
 <ul>
-<li>You can right click a white space on the page and choose <strong>View Page Source</strong> (this will show you the entire HTML document of that page)</li>
-<li>You can also right click a link, an image or anything on the page and choose <strong>Inspect</strong> (this will highlight the thing you clicked and show you all related source code)</li>
+<li>View entire HTML: <strong>Right click</strong> a white space on the page -&gt; <strong>View Page Source</strong>.</li>
+<li>Show related code: <strong>Right click</strong> a link or an image on the page -&gt; <strong>Inspect</strong>.</li>
 </ul>
 <p>If the code file looks too complicated and scary, don’t panic. We will start from the basic.</p>
 <section id="html" class="level2">
@@ -166,49 +166,204 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/body&gt;</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>HTML documents usually have file extension <code>.html</code></p></li>
-<li><p>An HTML document begins with <a href="https://en.wikipedia.org/wiki/Document_type_declaration">a declaration of the document type</a>: <code>&lt;!DOCTYPE html&gt;</code></p></li>
-<li><p>The first impression of an HTML document usually consist of elements organized as a series of nested <strong>containers</strong> with contents enclosed by <strong>tags</strong> (<code>&lt;&gt;</code>). <a href="#fig-html-tag">Figure&nbsp;1</a> shows the common atanomy of an HTML element.</p>
-<div id="fig-html-tag" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="https://www.computerhope.com/jargon/h/html-tag-breakdown.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Image source: <a href="https://www.computerhope.com/jargon/c/container-tag.htm">Computer Hope</a> obviously <span class="emoji" data-emoji="roll_eyes">🙄</span></figcaption><p></p>
-</figure>
-</div></li>
-<li><p>These tags are where the name “<strong>markup language</strong>” in HTML comes from; they are used to enrich the text by encoding the structure, formatting or relationships between different parts of a docuemnt.</p></li>
+<li><p>HTML documents have file extension <code>.html</code></p></li>
+<li><p>An HTML document begins with <code>&lt;!DOCTYPE html&gt;</code></p></li>
+<li><p>An HTML document consists a series of <strong>elements</strong> with contents enclosed by <code>&lt;tag&gt;</code>’s</p></li>
 <li><p>At a high level,</p>
 <ul>
-<li>Everything on the page is contained and enclosed by <code>&lt;html&gt;   &lt;/html&gt;</code></li>
-<li><code>&lt;head&gt;   &lt;/head&gt;</code> contains <em>meta information</em> of the page such as the title, the style sheets (more on this later), and the scripts for functionalities. These are usually <em>invisible</em>.</li>
-<li><code>&lt;body&gt;   &lt;/body&gt;</code> contains the contents (text, links, and images) we see and interact with on the page.</li>
+<li><code>&lt;html&gt; &lt;/html&gt;</code> contains everything of the page</li>
+<li><code>&lt;head&gt; &lt;/head&gt;</code> contains <em>information</em> such as the title and style sheets. These are usually <em>invisible</em>.</li>
+<li><code>&lt;body&gt; &lt;/body&gt;</code> contains the contents (text, links, images) we see and interact</li>
 </ul></li>
-<li><p>We will go over some useful HTML tags later. For a comprehensive list, check out <a href="https://www.w3schools.com/TAGS/default.asp">W3Schools</a>.</p></li>
+<li><p>Always complete an HTML element with an <em>opening</em> tag and a <em>closing</em> tag: <code>&lt;p&gt; &lt;/p&gt;</code></p></li>
+<li><p>We will go over some useful HTML tags. For a comprehensive list, check out <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">W3Schools</a>.</p></li>
 </ul>
 </section>
 <section id="css" class="level2">
 <h2 class="anchored" data-anchor-id="css">CSS</h2>
-<div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>body {</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">background</span>: <span class="cn">#ffdb12</span><span class="op">;</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>p {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span>: <span class="cn">#36342a</span><span class="op">;</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>h1 {<span class="kw">color</span>: <span class="cn">blue</span><span class="op">;</span> <span class="kw">font-size</span>: <span class="dv">12</span><span class="dt">px</span><span class="op">;</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li><p>CSS files usually have extension <code>.css</code></p></li>
+<li><p>A CSS file consists of a list of rules about how to <em>style</em> a HTML document.</p>
+<div id="fig-css-rule" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://www.w3schools.com/css/img_selector.gif" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Image source: <a href="https://www.w3schools.com/css/css_syntax.asp">W3Schools</a></figcaption><p></p>
+</figure>
+</div></li>
+<li><p>A selector looks for tags in the HTML to apply the CSS rules</p></li>
+<li><p>Enclose declarations by curly brackets <code>{ }</code> and separate them by semicolons <code>;</code></p></li>
+<li><p>In an HTML document, you can place CSS inside <code>&lt;head&gt; &lt;/head&gt;</code>:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;head&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;link</span> <span class="er">rel</span><span class="ot">=</span><span class="st">"stylesheet"</span> <span class="er">href</span><span class="ot">=</span><span class="st">"styles.css"</span><span class="kw">&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/head&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
 </section>
 <section id="javascript" class="level2">
 <h2 class="anchored" data-anchor-id="javascript">JavaScript</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'js-demo'</span>)<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> <span class="st">'Hello JavaScript'</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'js-demo'</span>)<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> <span class="st">'Hello JavaScript'</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>It is a programing language. I will not cover JavaScript in this class.</li>
+<li><a href="https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/">JavaScript basics</a> on Geeks for Geeks</li>
+<li><a href="https://www.w3schools.com/js/default.asp">JavaScript tutorial</a> on W3Schools</li>
+</ul>
 </section>
 </section>
-<section id="html-1" class="level1">
-<h1>HTML</h1>
-<section id="html-document" class="level2">
-<h2 class="anchored" data-anchor-id="html-document">HTML Document</h2>
-<p>An HTML document is declaired by</p>
+<section id="html-tags" class="level1">
+<h1>HTML Tags</h1>
+<table class="table">
+<caption>Body tags</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tag</th>
+<th style="text-align: center;">Meaning/Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;h1&gt;Chapter 1&lt;/h1&gt;</code></td>
+<td style="text-align: center;">first-level heading</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;h2&gt;Section 1&lt;/h2&gt;</code></td>
+<td style="text-align: center;">second-level heading</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;p&gt;paragraph&lt;/p&gt;</code></td>
+<td style="text-align: center;">start a paragraph</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;b&gt;bold text&lt;/b&gt;</code></td>
+<td style="text-align: center;"><b>bold text</b></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;i&gt;italic text&lt;/i&gt;</code></td>
+<td style="text-align: center;"><i>italic text</i></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;span style="color:#5a5ad0;font-size:larger;"&gt;text&lt;/span&gt;</code></td>
+<td style="text-align: center;">to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></td>
+<td style="text-align: center;">a link to <a href="https://www.google.com">Google</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"&gt;</code></td>
+<td style="text-align: center;"><img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;br&gt;</code></td>
+<td style="text-align: center;">a line break</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<caption>Head tags</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tag</th>
+<th style="text-align: center;">Meaning/Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;title&gt;</code></td>
+<td style="text-align: center;">title of the docuemnt</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></td>
+<td style="text-align: center;">include external style sheets</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="html-elements" class="level2">
-<h2 class="anchored" data-anchor-id="html-elements">HTML Elements</h2>
-<p>An HTML element is defined by a pair of opening and closing tags and the content within.</p>
+<section id="css-selector" class="level1">
+<h1>CSS Selector</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Selector</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>p {}</code></td>
+<td style="text-align: center;">all <code>&lt;p&gt;</code> elements</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>h1 {}</code></td>
+<td style="text-align: center;">all <code>&lt;h1&gt;</code> elements</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">e.g., <code>.fancy {}</code></td>
+<td style="text-align: center;">elements of <code>class="fancy"</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>* {}</code></td>
+<td style="text-align: center;">everything</td>
+</tr>
+</tbody>
+</table>
 </section>
+<section id="css-property-and-value" class="level1">
+<h1>CSS Property and Value</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Selector</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>color: red</code></td>
+<td style="text-align: center;"><span style="color: red">text color</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>background-color: cyan</code></td>
+<td style="text-align: center;"><span style="background-color: cyan">background color</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>font-size: 1.5em</code></td>
+<td style="text-align: center;"><span style="font-size: 1.5em">font size</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>font-family: Courier</code></td>
+<td style="text-align: center;"><span style="font-family: Courier">font family</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="publish-your-webpage-github" class="level1">
+<h1>Publish Your Webpage (GitHub)</h1>
+<p><strong>NOTE</strong>: The following steps are not the good practice to use GitHub. If you want to learn more, check out the <a href="https://docs.github.com/en/get-started/quickstart/hello-world">GitHub documentation</a>.</p>
+<ol type="1">
+<li>Register a GitHub account on <a href="https://www.github.com" class="uri">https://www.github.com</a></li>
+<li>Sign in GitHub, and create an empty <strong>repository</strong> by clicking the <code>+</code> at the top left corner (don’t change default settings)</li>
+<li>On the Quick Setup page, click the link <span style="color:blue"><strong>uploading an existing file</strong></span></li>
+<li>Add files of your webpage by uploading them.</li>
+<li>Click <span style="background-color:#22aa22;color:white"><strong>Commit Changes</strong></span>. Now your new online repo has some files.</li>
+<li>Click <strong>Setting</strong> under your repository name <img src="./images/repo-settings.png" class="img-fluid"></li>
+<li>Click <strong>Pages</strong> on the left in the <strong>Code and automation</strong> section <img src="./images/repo-settings-pages.png" class="img-fluid"></li>
+<li>On the right, you will see <strong>GitHub Page</strong>, make sure <strong>Souce</strong> is <strong>Deploy from a branch</strong><br>
+<img src="./images/gh-page.png" class="img-fluid"></li>
+<li>Under the <strong>Branch</strong> subsection, click the drop-down (shown as <strong>None</strong> above), and select <strong>main</strong> and <strong>/ (root)</strong>, respectively. <strong>Save</strong>! <img src="./images/gh-page-main-branch.png" class="img-fluid"></li>
+<li>Open a new browser window/tab, type in the web URL of your published page: <code>https://www.&lt;YOUR GITHUB USER NAME&gt;.github.io/&lt;YOUR REPO NAME&gt;/&lt;YOUR HTML FILE NAME&gt;</code></li>
+</ol>
 </section>
 
 </main>
