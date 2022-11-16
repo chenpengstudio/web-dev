@@ -16,6 +16,7 @@ from: markdown+emoji
 * HTML, CSS and JavaScript are the most popular _languanges_ behind almost every website.
 * Web browsers (Chrome, Safari, or Edge) hold the _dictionary_ to understand these languages and put on the nice-looking appearance of websites.
 * Under the hood, they are plain texts which you can view & edit with any <b>text editor</b>. 
+* For a step-by-stey guide to make your first webpage, see [Get Started](./get-started.html).
 
 # Introducing the Band
 
@@ -53,13 +54,16 @@ We will start from the basic.
 
 * An HTML document begins with `<!DOCTYPE html>`
 
-* An HTML document consists a series of **elements** with contents enclosed by `<tag>`'s
+* An HTML document consists a series of **elements** with contents enclosed by `<tag></tag>`'s
 
 * At a high level, 
   * `<html> </html>` contains everything of the page
-  * `<head> </head>` contains _information_ such as the title and style sheets. These are usually _invisible_.
+  * `<head> </head>` contains information such as the title and style sheets. These are usually _invisible_.
   * `<body> </body>` contains the contents (text, links, images) we see and interact
-* Always complete an HTML element with an _opening_ tag and a _closing_ tag: `<p> </p>`
+
+* Always[^close-tag] complete an HTML element with an _opening_ tag and a _closing_ tag: `<p> </p>`
+
+[^close-tag]: There are exceptions like `<img>`, `<link>` or `<br>`.
 
 * We will go over some useful HTML tags. For a comprehensive list, check out [W3Schools](https://www.w3schools.com/TAGS/ref_byfunc.asp).
  
@@ -86,13 +90,19 @@ h1 {color: blue; font-size: 12px;}
 
 ## JavaScript
 
-```js
-document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
+```html
+<button onclick="document.getElementById('face').src='./images/face-laugh.svg'">Make me laugh!</button>
+<img id="face" src="./images/face-smile.svg" style="width:100px;display:block;margin-left:auto;margin-right:auto">
+<button onclick="document.getElementById('face').src='./images/face-smile.svg'">That's enough...</button>
 ```
 
+<button onclick="document.getElementById('face').src='./images/face-laugh.svg'">Make me laugh!</button>
+<img id="face" src="./images/face-smile.svg" style="width:100px;display:block;margin-left:auto;margin-right:auto">
+<button onclick="document.getElementById('face').src='./images/face-smile.svg'">That's enough...</button>
+
 * It is a programing language. I will not cover JavaScript in this class.
-* [JavaScript basics](https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/) on Geeks for Geeks
-* [JavaScript tutorial](https://www.w3schools.com/js/default.asp) on W3Schools
+* Learn some [JavaScript basics](https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/) on Geeks for Geeks
+* Check out [JavaScript tutorial](https://www.w3schools.com/js/default.asp) on W3Schools
 
 # HTML Tags
 
@@ -106,14 +116,14 @@ document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 | `<span style="color:#5a5ad0;font-size:larger;">text</span>` | to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span>|
 | `<a href="https://www.google.com">Google</a>` | a link to <a href = "https://www.google.com">Google</a> |
 | `<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">` | <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"> | 
-| `<br>` | a line break | 
+| `<br>` | line break | 
 
 : Body tags 
 
 | Tag        |    Meaning/Usage |
 |:----------:|:----------:|
-| `<title>` | title of the docuemnt| 
-| `<link rel="stylesheet" href="styles.css">` | include external style sheets| 
+| `<title>A Meaningful Title</title>` | the title of a docuemnt| 
+| `<link rel="stylesheet" href="styles.css">` | include style sheet `style.css`| 
 
 : Head tags 
 
@@ -123,8 +133,7 @@ document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 |:----------:|:----------:|
 | `p {}` | all `<p>` elements | 
 | `h1 {}` | all `<h1>` elements | 
-| e.g., `.fancy {}` | elements of `class="fancy"`| 
-| `* {}` | everything| 
+| `.fancy {}` | elements of `class="fancy"`| 
 
 # CSS Property and Value
 
@@ -140,17 +149,16 @@ document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 **NOTE**: The following steps are not the good practice to use GitHub. If you want to learn more, check out the [GitHub documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
 
 1. Create a free GitHub account on <https://www.github.com>
-2. Sign in to GitHub, and create a **repository** by clicking **`+`** at the top-left corner. Don't change any default settings.
-3. On the Quick Setup page, click the link [**uploading an existing file**]{style="color:blue"}
+2. Sign in to GitHub, and create a **repository** (repo; a project folder) by clicking "**+**" at the top-left corner. Don't change any default settings.
+3. On the Quick Setup page after creating the repository, click the link [**uploading an existing file**]{style="color:blue"}
 4. Upload files of your webpage (`.html`, `.css`, and images).
 5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Your new repo has some files now.
-6. Click **Setting** under your repository name
+6. Click **Setting** in the navigation bar under your repo name
    ![](./images/repo-settings.png)
 7. Click **Pages** on the left in the **Code and automation** section
    ![](./images/repo-settings-pages.png)
 8. On the right, you will see **GitHub Page**, make sure **Souce** is **Deploy from a branch**   
-   ![](./images/gh-page.png)
 9. Under the **Branch** subsection, click the drop-down (shown as **None** above), and select **main** and **/ (root)**, respectively. **Save**!
-   ![](./images/gh-page-main-branch.png)
+   ![](./images/gh-page.png)
 10. Open a new browser window/tab, type in the web URL of your published page:
    `https://www.<YOUR GITHUB USER NAME>.github.io/<YOUR REPO NAME>/<YOUR HTML FILE NAME>`

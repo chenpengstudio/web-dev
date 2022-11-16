@@ -137,6 +137,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>HTML, CSS and JavaScript are the most popular <em>languanges</em> behind almost every website.</li>
 <li>Web browsers (Chrome, Safari, or Edge) hold the <em>dictionary</em> to understand these languages and put on the nice-looking appearance of websites.</li>
 <li>Under the hood, they are plain texts which you can view &amp; edit with any <b>text editor</b>.</li>
+<li>For a step-by-stey guide to make your first webpage, see <a href="./get-started.html">Get Started</a>.</li>
 </ul>
 </section>
 <section id="introducing-the-band" class="level1">
@@ -168,15 +169,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li><p>HTML documents have file extension <code>.html</code></p></li>
 <li><p>An HTML document begins with <code>&lt;!DOCTYPE html&gt;</code></p></li>
-<li><p>An HTML document consists a series of <strong>elements</strong> with contents enclosed by <code>&lt;tag&gt;</code>’s</p></li>
+<li><p>An HTML document consists a series of <strong>elements</strong> with contents enclosed by <code>&lt;tag&gt;&lt;/tag&gt;</code>’s</p></li>
 <li><p>At a high level,</p>
 <ul>
 <li><code>&lt;html&gt; &lt;/html&gt;</code> contains everything of the page</li>
-<li><code>&lt;head&gt; &lt;/head&gt;</code> contains <em>information</em> such as the title and style sheets. These are usually <em>invisible</em>.</li>
+<li><code>&lt;head&gt; &lt;/head&gt;</code> contains information such as the title and style sheets. These are usually <em>invisible</em>.</li>
 <li><code>&lt;body&gt; &lt;/body&gt;</code> contains the contents (text, links, images) we see and interact</li>
 </ul></li>
-<li><p>Always complete an HTML element with an <em>opening</em> tag and a <em>closing</em> tag: <code>&lt;p&gt; &lt;/p&gt;</code></p></li>
-<li><p>We will go over some useful HTML tags. For a comprehensive list, check out <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">W3Schools</a>.</p></li>
+<li><p>Always<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> complete an HTML element with an <em>opening</em> tag and a <em>closing</em> tag: <code>&lt;p&gt; &lt;/p&gt;</code></p></li>
+</ul>
+<ul>
+<li>We will go over some useful HTML tags. For a comprehensive list, check out <a href="https://www.w3schools.com/TAGS/ref_byfunc.asp">W3Schools</a>.</li>
 </ul>
 </section>
 <section id="css" class="level2">
@@ -201,11 +204,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="javascript" class="level2">
 <h2 class="anchored" data-anchor-id="javascript">JavaScript</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">'js-demo'</span>)<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> <span class="st">'Hello JavaScript'</span><span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-laugh.svg'"</span><span class="kw">&gt;</span>Make me laugh!<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">id</span><span class="ot">=</span><span class="st">"face"</span> <span class="er">src</span><span class="ot">=</span><span class="st">"./images/face-smile.svg"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"width:100px;display:block;margin-left:auto;margin-right:auto"</span><span class="kw">&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-smile.svg'"</span><span class="kw">&gt;</span>That's enough...<span class="kw">&lt;/button&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<button onclick="document.getElementById('face').src='./images/face-laugh.svg'">
+Make me laugh!
+</button>
+<p><img id="face" src="./images/face-smile.svg" style="width:100px;display:block;margin-left:auto;margin-right:auto"> <button onclick="document.getElementById('face').src='./images/face-smile.svg'">That’s enough…</button></p>
 <ul>
 <li>It is a programing language. I will not cover JavaScript in this class.</li>
-<li><a href="https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/">JavaScript basics</a> on Geeks for Geeks</li>
-<li><a href="https://www.w3schools.com/js/default.asp">JavaScript tutorial</a> on W3Schools</li>
+<li>Learn some <a href="https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/">JavaScript basics</a> on Geeks for Geeks</li>
+<li>Check out <a href="https://www.w3schools.com/js/default.asp">JavaScript tutorial</a> on W3Schools</li>
 </ul>
 </section>
 </section>
@@ -258,7 +267,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 <tr class="odd">
 <td style="text-align: center;"><code>&lt;br&gt;</code></td>
-<td style="text-align: center;">a line break</td>
+<td style="text-align: center;">line break</td>
 </tr>
 </tbody>
 </table>
@@ -276,12 +285,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><code>&lt;title&gt;</code></td>
-<td style="text-align: center;">title of the docuemnt</td>
+<td style="text-align: center;"><code>&lt;title&gt;A Meaningful Title&lt;/title&gt;</code></td>
+<td style="text-align: center;">the title of a docuemnt</td>
 </tr>
 <tr class="even">
 <td style="text-align: center;"><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></td>
-<td style="text-align: center;">include external style sheets</td>
+<td style="text-align: center;">include style sheet <code>style.css</code></td>
 </tr>
 </tbody>
 </table>
@@ -305,12 +314,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td style="text-align: center;">all <code>&lt;h1&gt;</code> elements</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">e.g., <code>.fancy {}</code></td>
+<td style="text-align: center;"><code>.fancy {}</code></td>
 <td style="text-align: center;">elements of <code>class="fancy"</code></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><code>* {}</code></td>
-<td style="text-align: center;">everything</td>
 </tr>
 </tbody>
 </table>
@@ -352,21 +357,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1>Publish Your Webpage (GitHub)</h1>
 <p><strong>NOTE</strong>: The following steps are not the good practice to use GitHub. If you want to learn more, check out the <a href="https://docs.github.com/en/get-started/quickstart/hello-world">GitHub documentation</a>.</p>
 <ol type="1">
-<li>Register a GitHub account on <a href="https://www.github.com" class="uri">https://www.github.com</a></li>
-<li>Sign in GitHub, and create an empty <strong>repository</strong> by clicking the <code>+</code> at the top left corner (don’t change default settings)</li>
-<li>On the Quick Setup page, click the link <span style="color:blue"><strong>uploading an existing file</strong></span></li>
-<li>Add files of your webpage by uploading them.</li>
-<li>Click <span style="background-color:#22aa22;color:white"><strong>Commit Changes</strong></span>. Now your new online repo has some files.</li>
-<li>Click <strong>Setting</strong> under your repository name <img src="./images/repo-settings.png" class="img-fluid"></li>
+<li>Create a free GitHub account on <a href="https://www.github.com" class="uri">https://www.github.com</a></li>
+<li>Sign in to GitHub, and create a <strong>repository</strong> (repo; a project folder) by clicking “<strong>+</strong>” at the top-left corner. Don’t change any default settings.</li>
+<li>On the Quick Setup page after creating the repository, click the link <span style="color:blue"><strong>uploading an existing file</strong></span></li>
+<li>Upload files of your webpage (<code>.html</code>, <code>.css</code>, and images).</li>
+<li>Click <span style="background-color:#22aa22;color:white"><strong>Commit Changes</strong></span>. Your new repo has some files now.</li>
+<li>Click <strong>Setting</strong> in the navigation bar under your repo name <img src="./images/repo-settings.png" class="img-fluid"></li>
 <li>Click <strong>Pages</strong> on the left in the <strong>Code and automation</strong> section <img src="./images/repo-settings-pages.png" class="img-fluid"></li>
 <li>On the right, you will see <strong>GitHub Page</strong>, make sure <strong>Souce</strong> is <strong>Deploy from a branch</strong><br>
-<img src="./images/gh-page.png" class="img-fluid"></li>
-<li>Under the <strong>Branch</strong> subsection, click the drop-down (shown as <strong>None</strong> above), and select <strong>main</strong> and <strong>/ (root)</strong>, respectively. <strong>Save</strong>! <img src="./images/gh-page-main-branch.png" class="img-fluid"></li>
+</li>
+<li>Under the <strong>Branch</strong> subsection, click the drop-down (shown as <strong>None</strong> above), and select <strong>main</strong> and <strong>/ (root)</strong>, respectively. <strong>Save</strong>! <img src="./images/gh-page.png" class="img-fluid"></li>
 <li>Open a new browser window/tab, type in the web URL of your published page: <code>https://www.&lt;YOUR GITHUB USER NAME&gt;.github.io/&lt;YOUR REPO NAME&gt;/&lt;YOUR HTML FILE NAME&gt;</code></li>
 </ol>
 </section>
 
-</main>
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>There are exceptions like <code>&lt;img&gt;</code>, <code>&lt;link&gt;</code> or <code>&lt;br&gt;</code>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
