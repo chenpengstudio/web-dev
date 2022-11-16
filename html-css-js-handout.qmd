@@ -139,11 +139,11 @@ document.getElementById('js-demo').innerHTML = 'Hello JavaScript';
 
 **NOTE**: The following steps are not the good practice to use GitHub. If you want to learn more, check out the [GitHub documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
 
-1. Register a GitHub account on <https://www.github.com>
-2. Sign in GitHub, and create an empty **repository** by clicking the `+` at the top left corner (don't change default settings)
+1. Create a free GitHub account on <https://www.github.com>
+2. Sign in to GitHub, and create a **repository** by clicking **`+`** at the top-left corner. Don't change any default settings.
 3. On the Quick Setup page, click the link [**uploading an existing file**]{style="color:blue"}
-4. Add files of your webpage by uploading them.
-5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Now your new online repo has some files.
+4. Upload files of your webpage (`.html`, `.css`, and images).
+5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Your new repo has some files now.
 6. Click **Setting** under your repository name
    ![](./images/repo-settings.png)
 7. Click **Pages** on the left in the **Code and automation** section
