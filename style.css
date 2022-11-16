@@ -2,8 +2,9 @@ body{
 line-height: 30px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 max-width: 1000px;
-margin-left: auto;
+margin-left:  auto;
 margin-right: auto;
+padding: 30px;
 margin-top: 30px;
 background: rgb(244, 255, 28);
 background: linear-gradient(90deg, rgba(191,198,64,1) 0%, rgba(0,213,255,1) 100%);
