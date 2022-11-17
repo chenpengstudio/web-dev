@@ -1,0 +1,68 @@
+---
+title: "HTML Tags and CSS Rules"
+subtitle: "A Cheatsheet"
+author: Chen Peng
+format: 
+  html: default
+  pdf: default
+editor:
+  render-on-save: true
+highlight-style: github
+from: markdown+emoji
+---
+
+::: {.column-margin}
+* [**Home**](./)
+* [**Get Started**](./get-started.html):  
+  a step-by-stey guide to your first webpage
+* [**HTML Tags and CSS Rules**](./cheatsheet.html):  
+  Cheatsheet
+* [**Publish on GitHub**](./github.html)
+:::
+
+::: {.callout-tip}
+
+# Takeaway
+
+This page include some commonly used HTML tags and CSS rules that you will fine helpful. 
+:::
+
+# HTML Tags
+
+| Tag        |    Meaning/Usage |
+|:----------:|:----------:|
+| `<h1>Chapter 1</h1>` | first-level heading |
+| `<h2>Section 1</h2>` | second-level heading |
+| `<p>paragraph</p>` | start a paragraph |
+| `<b>bold text</b>` | <b>bold text</b> |
+| `<i>italic text</i>` | <i>italic text</i> |
+| `<span style="color:#5a5ad0;font-size:larger;">text</span>` | to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span>|
+| `<a href="https://www.google.com">Google</a>` | a link to <a href = "https://www.google.com">Google</a> |
+| `<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">` | <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"> | 
+| `<br>` | line break | 
+
+: Body tags 
+
+| Tag        |    Meaning/Usage |
+|:----------:|:----------:|
+| `<title>A Meaningful Title</title>` | the title of a docuemnt| 
+| `<link rel="stylesheet" href="styles.css">` | include style sheet `style.css`| 
+
+: Head tags 
+
+# CSS Selector
+
+| Selector        |    Meaning |
+|:----------:|:----------:|
+| `p {}` | all `<p>` elements | 
+| `h1 {}` | all `<h1>` elements | 
+| `.fancy {}` | elements of `class="fancy"`| 
+
+# CSS Property and Value
+
+| Selector        |    Meaning |
+|:----------:|:----------:|
+| `color: red` |  <span style="color: red">text color</span> | 
+| `background-color: cyan` |  <span style="background-color: cyan">background color</span> | 
+| `font-size: 1.5em` |  <span style="font-size: 1.5em">font size</span> | 
+| `font-family: Courier` |  <span style="font-family: Courier">font family</span> | 

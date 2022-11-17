@@ -1,0 +1,46 @@
+---
+title: "Publish You Site on GitHub Page"
+author: Chen Peng
+format: 
+  html: default
+  pdf: default
+editor:
+  render-on-save: true
+highlight-style: github
+from: markdown+emoji
+---
+
+::: {.column-margin}
+* [**Home**](./)
+* [**Get Started**](./get-started.html):  
+  a step-by-stey guide to your first webpage
+* [**HTML Tags and CSS Rules**](./cheatsheet.html):  
+  Cheatsheet
+* [**Publish on GitHub**](./github.html)
+:::
+
+::: {.callout-tip}
+
+# Takeaway
+
+This page include some commonly used HTML tags and CSS rules that you will fine helpful. 
+:::
+
+::: {.callout-tip}
+If you want to learn more, check out the [GitHub documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
+:::
+
+1. Create a free GitHub account on <https://www.github.com>
+2. Sign in to GitHub, and create a **repository** (repo; a project folder) by clicking "**+**" at the top-left corner. Don't change any default settings.
+3. On the Quick Setup page after creating the repository, click the link [**uploading an existing file**]{style="color:blue"}
+4. Upload files of your webpage (`.html`, `.css`, and images).
+5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Your new repo has some files now.
+6. Click **Setting** in the navigation bar under your repo name
+   ![](./images/repo-settings.png)
+7. Click **Pages** on the left in the **Code and automation** section
+   ![](./images/repo-settings-pages.png)
+8. On the right, you will see **GitHub Page**, make sure **Souce** is **Deploy from a branch**   
+9. Under the **Branch** subsection, click the drop-down (shown as **None** above), and select **main** and **/ (root)**, respectively. **Save**!
+   ![](./images/gh-page.png)
+10. Open a new browser window/tab, type in the web URL of your published page:
+   `https://www.<YOUR GITHUB USER NAME>.github.io/<YOUR REPO NAME>/<YOUR HTML FILE NAME>`

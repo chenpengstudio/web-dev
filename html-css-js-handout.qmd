@@ -11,12 +11,23 @@ highlight-style: github
 from: markdown+emoji
 ---
 
+::: {.column-margin}
+* [**Home**](./)
+* [**Get Started**](./get-started):  
+  a step-by-stey guide to your first webpage
+* [**HTML Tags and CSS Rules**](./cheatsheet.html):  
+  Cheatsheet
+* [**Publish on GitHub**](./github.html)
+:::
+
+::: {.callout-tip}
+
 # Takeaway
 
 * HTML, CSS and JavaScript are the most popular _languanges_ behind almost every website.
 * Web browsers (Chrome, Safari, or Edge) hold the _dictionary_ to understand these languages and put on the nice-looking appearance of websites.
 * Under the hood, they are plain texts which you can view & edit with any <b>text editor</b>. 
-* For a step-by-stey guide to make your first webpage, see [Get Started](./get-started.html).
+:::
 
 # Introducing the Band
 
@@ -103,62 +114,3 @@ h1 {color: blue; font-size: 12px;}
 * It is a programing language. I will not cover JavaScript in this class.
 * Learn some [JavaScript basics](https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/) on Geeks for Geeks
 * Check out [JavaScript tutorial](https://www.w3schools.com/js/default.asp) on W3Schools
-
-# HTML Tags
-
-| Tag        |    Meaning/Usage |
-|:----------:|:----------:|
-| `<h1>Chapter 1</h1>` | first-level heading |
-| `<h2>Section 1</h2>` | second-level heading |
-| `<p>paragraph</p>` | start a paragraph |
-| `<b>bold text</b>` | <b>bold text</b> |
-| `<i>italic text</i>` | <i>italic text</i> |
-| `<span style="color:#5a5ad0;font-size:larger;">text</span>` | to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span>|
-| `<a href="https://www.google.com">Google</a>` | a link to <a href = "https://www.google.com">Google</a> |
-| `<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">` | <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"> | 
-| `<br>` | line break | 
-
-: Body tags 
-
-| Tag        |    Meaning/Usage |
-|:----------:|:----------:|
-| `<title>A Meaningful Title</title>` | the title of a docuemnt| 
-| `<link rel="stylesheet" href="styles.css">` | include style sheet `style.css`| 
-
-: Head tags 
-
-# CSS Selector
-
-| Selector        |    Meaning |
-|:----------:|:----------:|
-| `p {}` | all `<p>` elements | 
-| `h1 {}` | all `<h1>` elements | 
-| `.fancy {}` | elements of `class="fancy"`| 
-
-# CSS Property and Value
-
-| Selector        |    Meaning |
-|:----------:|:----------:|
-| `color: red` |  <span style="color: red">text color</span> | 
-| `background-color: cyan` |  <span style="background-color: cyan">background color</span> | 
-| `font-size: 1.5em` |  <span style="font-size: 1.5em">font size</span> | 
-| `font-family: Courier` |  <span style="font-family: Courier">font family</span> | 
-
-# Publish Your Webpage (GitHub)
-
-**NOTE**: The following steps are not the good practice to use GitHub. If you want to learn more, check out the [GitHub documentation](https://docs.github.com/en/get-started/quickstart/hello-world).
-
-1. Create a free GitHub account on <https://www.github.com>
-2. Sign in to GitHub, and create a **repository** (repo; a project folder) by clicking "**+**" at the top-left corner. Don't change any default settings.
-3. On the Quick Setup page after creating the repository, click the link [**uploading an existing file**]{style="color:blue"}
-4. Upload files of your webpage (`.html`, `.css`, and images).
-5. Click [**Commit Changes**]{style="background-color:#22aa22;color:white"}. Your new repo has some files now.
-6. Click **Setting** in the navigation bar under your repo name
-   ![](./images/repo-settings.png)
-7. Click **Pages** on the left in the **Code and automation** section
-   ![](./images/repo-settings-pages.png)
-8. On the right, you will see **GitHub Page**, make sure **Souce** is **Deploy from a branch**   
-9. Under the **Branch** subsection, click the drop-down (shown as **None** above), and select **main** and **/ (root)**, respectively. **Save**!
-   ![](./images/gh-page.png)
-10. Open a new browser window/tab, type in the web URL of your published page:
-   `https://www.<YOUR GITHUB USER NAME>.github.io/<YOUR REPO NAME>/<YOUR HTML FILE NAME>`

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Chen Peng">
+
+<title>HTML Tags and CSS Rules</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="cheatsheet_files/libs/clipboard/clipboard.min.js"></script>
+<script src="cheatsheet_files/libs/quarto-html/quarto.js"></script>
+<script src="cheatsheet_files/libs/quarto-html/popper.min.js"></script>
+<script src="cheatsheet_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="cheatsheet_files/libs/quarto-html/anchor.min.js"></script>
+<link href="cheatsheet_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="cheatsheet_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="cheatsheet_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="cheatsheet_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="cheatsheet_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">HTML Tags and CSS Rules</h1>
+<p class="subtitle lead">A Cheatsheet</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Chen Peng </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+<div class="no-row-height column-margin column-container"><div class="">
+<ul>
+<li><a href="./"><strong>Home</strong></a></li>
+<li><a href="./get-started.html"><strong>Get Started</strong></a>:<br>
+a step-by-stey guide to your first webpage</li>
+<li><a href="./cheatsheet.html"><strong>HTML Tags and CSS Rules</strong></a>:<br>
+Cheatsheet</li>
+<li><a href="./github.html"><strong>Publish on GitHub</strong></a></li>
+</ul>
+</div></div><div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Takeaway
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This page include some commonly used HTML tags and CSS rules that you will fine helpful.</p>
+</div>
+</div>
+<section id="html-tags" class="level1">
+<h1>HTML Tags</h1>
+<table class="table">
+<caption>Body tags</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tag</th>
+<th style="text-align: center;">Meaning/Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;h1&gt;Chapter 1&lt;/h1&gt;</code></td>
+<td style="text-align: center;">first-level heading</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;h2&gt;Section 1&lt;/h2&gt;</code></td>
+<td style="text-align: center;">second-level heading</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;p&gt;paragraph&lt;/p&gt;</code></td>
+<td style="text-align: center;">start a paragraph</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;b&gt;bold text&lt;/b&gt;</code></td>
+<td style="text-align: center;"><b>bold text</b></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;i&gt;italic text&lt;/i&gt;</code></td>
+<td style="text-align: center;"><i>italic text</i></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;span style="color:#5a5ad0;font-size:larger;"&gt;text&lt;/span&gt;</code></td>
+<td style="text-align: center;">to style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code></td>
+<td style="text-align: center;">a link to <a href="https://www.google.com">Google</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"&gt;</code></td>
+<td style="text-align: center;"><img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;br&gt;</code></td>
+<td style="text-align: center;">line break</td>
+</tr>
+</tbody>
+</table>
+<table class="table">
+<caption>Head tags</caption>
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tag</th>
+<th style="text-align: center;">Meaning/Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>&lt;title&gt;A Meaningful Title&lt;/title&gt;</code></td>
+<td style="text-align: center;">the title of a docuemnt</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></td>
+<td style="text-align: center;">include style sheet <code>style.css</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="css-selector" class="level1">
+<h1>CSS Selector</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Selector</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>p {}</code></td>
+<td style="text-align: center;">all <code>&lt;p&gt;</code> elements</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>h1 {}</code></td>
+<td style="text-align: center;">all <code>&lt;h1&gt;</code> elements</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>.fancy {}</code></td>
+<td style="text-align: center;">elements of <code>class="fancy"</code></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="css-property-and-value" class="level1">
+<h1>CSS Property and Value</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Selector</th>
+<th style="text-align: center;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>color: red</code></td>
+<td style="text-align: center;"><span style="color: red">text color</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>background-color: cyan</code></td>
+<td style="text-align: center;"><span style="background-color: cyan">background color</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>font-size: 1.5em</code></td>
+<td style="text-align: center;"><span style="font-size: 1.5em">font size</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>font-family: Courier</code></td>
+<td style="text-align: center;"><span style="font-family: Courier">font family</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
