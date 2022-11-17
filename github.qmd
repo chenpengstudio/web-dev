@@ -1,6 +1,6 @@
 ---
 title: "Publish You Site on GitHub Page"
-subtitle: "A Simplified Workflow"
+subtitle: "For Adventurers"
 author: Chen Peng
 format: 
   html: default
@@ -17,7 +17,7 @@ from: markdown+emoji
   a step-by-stey guide to your first webpage
 * [**HTML Tags and CSS Rules**](./cheatsheet.html):  
   a cheatsheet
-* [**Publish on GitHub**](./github.html)
+* [**Publish on GitHub** (for Adventurers)](./github.html)
 :::
 
 ::: {.callout-tip}

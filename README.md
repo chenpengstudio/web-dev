@@ -6,4 +6,4 @@
   a handout of the basics
 * [**HTML Tags and CSS Rules**](./cheatsheet.html):  
   a cheatsheet
-* [**Publish on GitHub**](./github.html)  
+* [**Publish on GitHub** (for Adventurers)](./github.html)  
