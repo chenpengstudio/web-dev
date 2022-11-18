@@ -24,7 +24,7 @@ from: markdown+emoji
 
 # Takeaway
 
-This page include some commonly used HTML tags and CSS rules that you will fine helpful. 
+This page include some commonly used HTML tags and CSS rules that you will find helpful. 
 :::
 
 # HTML Tags
