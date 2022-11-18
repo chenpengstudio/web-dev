@@ -1,7 +1,7 @@
 ---
 title: "HTML Tags and CSS Rules"
 subtitle: "A Cheatsheet"
-author: Chen Peng
+author: Chen Peng and FW
 format: 
   html: default
   pdf: default
@@ -16,7 +16,7 @@ from: markdown+emoji
 * [**Intro**](./html-css-js-handout.html):  
   basic concepts
 * [**Get Started**](./get-started.html):  
-  a step-by-step guide to your first webpage
+  a step-by-step guide to set up
 * [**HTML Tags and CSS Rules**](./cheatsheet.html):  
   a cheatsheet
 * [**Publish on GitHub** (for Adventurers)](./github.html)

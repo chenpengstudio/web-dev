@@ -1,14 +1,17 @@
 body{
-line-height: 30px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-max-width: 1000px;
-margin-left:  auto;
-margin-right: auto;
-padding: 30px;
-margin-top: 30px;
-background: rgb(244, 255, 28);
-background: linear-gradient(90deg, rgba(191,198,64,1) 0%, rgba(0,213,255,1) 100%);
+    line-height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 1000px;
+    margin-left:  auto;
+    margin-right: auto;
+    padding: 30px;
+    margin-top: 30px;
+    background: rgb(244, 255, 28);
+    background: linear-gradient(90deg, rgba(191,198,64,1) 0%, rgba(0,213,255,1) 100%);
+}
 
+h2{
+    color: whitesmoke;
 }
 
 .example {
@@ -30,7 +33,6 @@ background: linear-gradient(90deg, rgba(191,198,64,1) 0%, rgba(0,213,255,1) 100%
     100% {left:0px; top:0px;}
 }
 
-
 .jump {
     transform-origin: 0% 100%;
     animation: jump 1s linear alternate infinite;
@@ -40,11 +42,4 @@ background: linear-gradient(90deg, rgba(191,198,64,1) 0%, rgba(0,213,255,1) 100%
     0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
     50%  {transform: translate3d(0,100%,0) scale3d(1,1.5,1)}
     100% {transform: translate3d(0,0,0) scale3d(1,1,1);}
-}
-
-
-
-
-h2{
-color: whitesmoke;
 }
