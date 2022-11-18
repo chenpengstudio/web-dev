@@ -13,8 +13,10 @@ from: markdown+emoji
 
 ::: {.column-margin}
 * [**Home**](./)
+* [**Intro**](./html-css-js-handout.html):  
+  basic concepts
 * [**Get Started**](./get-started.html):  
-  a step-by-stey guide to your first webpage
+  a step-by-step guide to your first webpage
 * [**HTML Tags and CSS Rules**](./cheatsheet.html):  
   a cheatsheet
 * [**Publish on GitHub** (for Adventurers)](./github.html)
@@ -91,12 +93,16 @@ h1 {color: blue; font-size: 12px;}
   
 * A selector looks for tags in the HTML to apply the CSS rules
 * Enclose declarations by curly brackets `{ }` and separate them by semicolons `;`
-* In an HTML document, you can place CSS inside `<head> </head>`:
+* In an HTML document, you can declare **external** CSS inside `<head> </head>`:
   
   ```html
   <head>
     <link rel="stylesheet" href="styles.css">
   </head>
+  ```
+* You can also use **inline** style sheet directly in the element's opening tag:
+  ```html
+  <p style="color:red;">A red paragraph.</p>
   ```
 
 ## JavaScript

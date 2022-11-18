@@ -136,8 +136,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="no-row-height column-margin column-container"><div class="">
 <ul>
 <li><a href="./"><strong>Home</strong></a></li>
+<li><a href="./html-css-js-handout.html"><strong>Intro</strong></a>:<br>
+basic concepts</li>
 <li><a href="./get-started.html"><strong>Get Started</strong></a>:<br>
-a step-by-stey guide to your first webpage</li>
+a step-by-step guide to your first webpage</li>
 <li><a href="./cheatsheet.html"><strong>HTML Tags and CSS Rules</strong></a>:<br>
 a cheatsheet</li>
 <li><a href="./github.html"><strong>Publish on GitHub</strong> (for Adventurers)</a></li>
@@ -215,17 +217,19 @@ Takeaway
 </div></li>
 <li><p>A selector looks for tags in the HTML to apply the CSS rules</p></li>
 <li><p>Enclose declarations by curly brackets <code>{ }</code> and separate them by semicolons <code>;</code></p></li>
-<li><p>In an HTML document, you can place CSS inside <code>&lt;head&gt; &lt;/head&gt;</code>:</p>
+<li><p>In an HTML document, you can declare <strong>external</strong> CSS inside <code>&lt;head&gt; &lt;/head&gt;</code>:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;head&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;link</span> <span class="er">rel</span><span class="ot">=</span><span class="st">"stylesheet"</span> <span class="er">href</span><span class="ot">=</span><span class="st">"styles.css"</span><span class="kw">&gt;</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/head&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>You can also use <strong>inline</strong> style sheet directly in the element’s opening tag:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red;"</span><span class="kw">&gt;</span>A red paragraph.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
 </ul>
 </section>
 <section id="javascript" class="level2">
 <h2 class="anchored" data-anchor-id="javascript">JavaScript</h2>
-<div class="sourceCode" id="cb4"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-laugh.svg'"</span><span class="kw">&gt;</span>Make me laugh!<span class="kw">&lt;/button&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">id</span><span class="ot">=</span><span class="st">"face"</span> <span class="er">src</span><span class="ot">=</span><span class="st">"./images/face-smile.svg"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"width:100px;display:block;margin-left:auto;margin-right:auto"</span><span class="kw">&gt;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-smile.svg'"</span><span class="kw">&gt;</span>That's enough...<span class="kw">&lt;/button&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-laugh.svg'"</span><span class="kw">&gt;</span>Make me laugh!<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;img</span> <span class="er">id</span><span class="ot">=</span><span class="st">"face"</span> <span class="er">src</span><span class="ot">=</span><span class="st">"./images/face-smile.svg"</span> <span class="er">style</span><span class="ot">=</span><span class="st">"width:100px;display:block;margin-left:auto;margin-right:auto"</span><span class="kw">&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;button</span> <span class="er">onclick</span><span class="ot">=</span><span class="st">"document.getElementById('face').src='./images/face-smile.svg'"</span><span class="kw">&gt;</span>That's enough...<span class="kw">&lt;/button&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <button onclick="document.getElementById('face').src='./images/face-laugh.svg'">
 Make me laugh!
 </button>

@@ -13,8 +13,10 @@ from: markdown+emoji
 
 ::: {.column-margin}
 * [**Home**](./)
+* [**Intro**](./html-css-js-handout.html):  
+  basic concepts
 * [**Get Started**](./get-started.html):  
-  a step-by-stey guide to your first webpage
+  a step-by-step guide to your first webpage
 * [**HTML Tags and CSS Rules**](./cheatsheet.html):  
   a cheatsheet
 * [**Publish on GitHub** (for Adventurers)](./github.html)
