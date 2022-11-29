@@ -13,13 +13,13 @@ from: markdown+emoji
 
 ::: {.column-margin}
 * [**Home**](./)
-* [**Intro**](./html-css-js-handout.html):  
+* [**Intro**](./html-css-js-handout.html){target="_blank"}:  
   basic concepts
-* [**Get Started**](./get-started.html):  
+* [**Get Started**](./get-started.html){target="_blank"}:  
   a step-by-step guide to set up
-* [**HTML Tags and CSS Rules**](./cheatsheet.html):  
+* [**HTML Tags and CSS Rules**](./cheatsheet.html){target="_blank"}:  
   a cheatsheet
-* [**Publish on GitHub** (for Adventurers)](./github.html)
+* [**Publish on GitHub** (for Adventurers)](./github.html){target="_blank"}
 :::
 
 ::: {.callout-tip}

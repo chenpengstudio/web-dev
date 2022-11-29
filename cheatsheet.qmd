@@ -13,13 +13,13 @@ from: markdown+emoji
 
 ::: {.column-margin}
 * [**Home**](./)
-* [**Intro**](./html-css-js-handout.html):  
+* [**Intro**](./html-css-js-handout.html){target="_blank"}:  
   basic concepts
-* [**Get Started**](./get-started.html):  
+* [**Get Started**](./get-started.html){target="_blank"}:  
   a step-by-step guide to set up
-* [**HTML Tags and CSS Rules**](./cheatsheet.html):  
+* [**HTML Tags and CSS Rules**](./cheatsheet.html){target="_blank"}:  
   a cheatsheet
-* [**Publish on GitHub** (for Adventurers)](./github.html)
+* [**Publish on GitHub** (for Adventurers)](./github.html){target="_blank"}
 :::
 
 ::: {.callout-tip}
@@ -31,39 +31,130 @@ This page include some commonly used HTML tags and CSS rules that you will find 
 
 # HTML Tags
 
-## Tags Used in `<body> </body>`
+## The invisible setups go between **`<head> </head>`**
 
-* First-level heading: `<h1>Chapter 1</h1>`  
-* Second-level heading: `<h2>Section 1</h2>`  
-* Start a paragraph: `<p>paragraph</p>`  
-* <b>Bold text</b>: `<b>bold text</b>`  
-* <i>Italic text</i>: `<i>italic text</i>`  
-* Style a part of a <span style="color:#5a5ad0;font-size:larger;">text</span>: `<span style="color:#5a5ad0;font-size:larger;">text</span>`  
-* Create a link to <a href = "https://www.google.com">Google</a>: `<a href="https://www.google.com">Google</a>`  
-* Insert a <img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">: `<img src="https://www.w3schools.com/images/lamp.jpg" alt="Lamp" width="32" height="32">`  
-* Insert a line break (browers ignore line breaks in HTML code)[^nbsp]: `<br>`  
+|    |           |
+|:---|:----------|
+| | **`<head>`** |
+| Set title of the HTML docuemnt| `<title>A Meaningful Title</title>` |
+| Link the external CSS style sheet `style.css`| `<link rel="stylesheet" href="styles.css">` |
+| | **`</head>`** |
 
-[^nbsp]: Browers also ignore _extra_ (more than 1) spaces in HTML code, you need to type `&nbsp;` to insert additional spaces.
+## Visible contents go between **`<body> </body>`**
 
-## Tags Used in `<head> </head>`
+|    |           |
+|:---|:----------|
+| &nbsp;&nbsp;&nbsp;| **`<body>`** |
 
-* Set title of a docuemnt: `<title>A Meaningful Title</title>`  
-* Include CSS style sheet `style.css`: `<link rel="stylesheet" href="styles.css">`  
+### Tags for headings
 
-# CSS Selector
+|    |           |
+|:---|:----------|
+| [Heading 1]{style="font-size:24pt;"} | `<h1>Chapter 1: HTML/CSS Cheat Sheet</h1>` |
+| [Heading 2]{style="font-size:18pt;"} | `<h2>Section 1: HTML Tags</h2>` |
 
-| Selector        |    Meaning |
+There are 6 levels of heading `<h1>` through `<h6>`; `<h1>` is biggest/first-level heading.
+
+### Tags for texts
+
+|    |           |
+|:---|:----------|
+| Start a new paragraph| `<p>Shepseskaf was a pharaoh of ancient Egypt.</p>` |
+| <b>Bold text</b>| `<b>This sentence will be in bold font.</b>` |
+| <i>Italic text</i>| `<i>An italic sentence.</i>`| 
+| Insert a line break [^nbsp]| `<br>`  |
+| [Color]{style="color:#ca5a80;"} part of your text | `<span style="color:#ca5a80;">colored text</span>`  |
+
+### Tags to insert links/images
+
+|    |           |
+|:---|:----------|
+| A link to <a href = "https://www.google.com">Google</a>| `<a href="https://www.google.com">Google</a>`|
+| An image <img src="images/lamp.jpg" width=32px>| `<img src="images/lamp.jpg" width=32px>`  |
+| Another image <img src="images/lamp.jpg" width=10%>| `<img src="images/lamp.jpg" width=10%>`  |
+
+You can specify the size of an image in either *absolute* unit (`px` for pixels) or *relative* unit (`%`).
+
+|    |           |
+|:---|:----------|
+| &nbsp;&nbsp;&nbsp;| **`</body>`** |
+
+[^nbsp]: Browers ignore line breaks in HTML code, so you need to type `<br>` to make it clear that you **WANT** a line break. Browers also ignore _extra_ (more than 1) spaces in HTML code, you need to type `&nbsp;` to insert additional spaces.
+
+# CSS Style Sheets
+
+Recall that there are **two** ways to specify styles to your HTML documents.
+
+1. You can declare **external** CSS inside `<head> </head>` of an HTML document:
+  
+   ```html
+   <head>
+     <link rel="stylesheet" href="styles.css">
+   </head>
+   ```
+2. You can also use **inline** style sheet directly in the element's opening tag:
+   ```html
+   <p style="color:red;">A red paragraph.</p>
+   ```
+
+## CSS Selector
+
+We use CSS selectors in an external CSS style sheet to style **an entire type/class of HTML elements**.
+In CSS code, we need [**curly brackets `{ }` to enclose**]{style="background-color:yellow;"} the styles for HTML elements targeted by the selector.
+Properties of the same element are separated by semicolons `;`.
+
+For example, this will give you blue level-one headings in 12-pixel font size:
+
+```css
+h1 {
+  color: blue; 
+  font-size: 12px;
+}
+```
+
+| Style Selector        |    Correspondance in HTML Contents |
 |:----------:|:----------:|
-| `p {}` | all `<p>` elements | 
-| `h1 {}` | all `<h1>` elements | 
-| `.fancy {}` | elements of `class="fancy"`| 
+| `p {}` | all `<p>` (paragraph) elements in the HTML document | 
+| `h1 {}` | all `<h1>` (heading 1) elements in the HTML document | 
+| `.fancy {}` | elements of `class="fancy"` in the HTML document| 
+
 
 # CSS Property and Value
 
-* <span style="color: red">text color</span>: `color: red`   
-* <span style="background-color: cyan">background color</span>: `background-color: cyan`   
-* <span style="background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);color: white;">background gradient</span> [^1]: `background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);` 
-* <span style="font-size: 1.5em">font size</span>: `font-size: 1.5em` 
-* <span style="font-family: Courier">font family</span>: `font-family: Courier` 
+### CSS for text
+
+|    |    |
+|:----|:-----------|
+| <span style="color: red">text color</span>| `color: red`   |
+| <span style="font-size: 1.5em">font size</span>| `font-size: 1.5em`|
+| <span style="font-family: Courier">font family</span>| `font-family: Courier`|
+| <span style="text-shadow: 1px 1px 2px pink;">text shadow</span>| `text-shadow: 1px 1px 2px pink`|
+| <span style="line-height: 3.5rem">line height</span>| `line-height: 3.5rem`|
+
+### CSS for background
+
+<span style="background-color: cyan">background color</span>
+
+`background-color: cyan`
+
+<span style="background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);color: white;">background gradient</span> [^1]
+
+`background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);`
+
+<p style="color:#4444a4; text-shadow: 1px 1px 2px pink; font-size:1.5rem; line-height:2.0rem; background-image: url(images/lamp.jpg)">background image</p> 
+
+`background-image: url(images/lamp.jpg);`
 
 [^1]: You can use <https://cssgradient.io> to help create a background gradient.
+
+### CSS to center all contents in the HTML body
+
+```css
+body{
+    max-width: 1000px;
+    margin-left:  auto;
+    margin-right: auto;
+}
+```
+
+For text/image alignment, check out the [W3School tutorial](https://www.w3schools.com/css/css_align.asp).
