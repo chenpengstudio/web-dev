@@ -1,0 +1,36 @@
+body {
+	animation-name: backgroundColorPalette;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes backgroundColorPalette {
+	0% {
+		background: #e57d76;
+	}
+	25% {
+		background: #7acde6;
+	}
+	50% {
+		background: #bef2a1;
+	}
+	75% {
+		background: #eed395;
+	}
+	100% {
+		background: #edb17d;
+	}
+}
+
+body {
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+line-height: .6cm;
+max-width: 1000px;
+margin-left:1cm;margin-right:1cm;
+text-align: center;
+border-style:ridge;
+padding: cm;
+}
