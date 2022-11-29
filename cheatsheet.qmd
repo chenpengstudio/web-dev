@@ -133,17 +133,17 @@ h1 {
 
 ### CSS for background
 
-<span style="background-color: cyan">background color</span>
+* <span style="background-color: cyan">background color</span>
 
-`background-color: cyan`
+  `background-color: cyan`
 
-<span style="background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);color: white;">background gradient</span> [^1]
+* <span style="background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);color: white;">background gradient</span> [^1]
 
-`background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);`
+  `background: linear-gradient(90deg, rgb(2,0,6) 0%, rgb(0,212,255) 100%);`
 
-<p style="color:#4444a4; text-shadow: 1px 1px 2px pink; font-size:1.5rem; line-height:2.0rem; background-image: url(images/lamp.jpg)">background image</p> 
+* <p style="color:#4444a4; text-shadow: 1px 1px 2px pink; font-size:1.5rem; line-height:2.0rem; background-image: url(images/lamp.jpg)">background image</p> 
 
-`background-image: url(images/lamp.jpg);`
+  `background-image: url(images/lamp.jpg);`
 
 [^1]: You can use <https://cssgradient.io> to help create a background gradient.
 
