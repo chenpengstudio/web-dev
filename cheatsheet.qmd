@@ -37,8 +37,10 @@ This page include some commonly used HTML tags and CSS rules that you will find 
 |:---|:----------|
 | | **`<head>`** |
 | Set title of the HTML docuemnt| `<title>A Meaningful Title</title>` |
-| Link the external CSS style sheet `style.css`| `<link rel="stylesheet" href="styles.css">` |
+| Link the external[^path] CSS style sheet `style.css`| `<link rel="stylesheet" href="styles.css">` |
 | | **`</head>`** |
+
+[^path]: Here, there and everywhere, we assume all your external files (style sheets, images, etc.) are in the same folder as your HTML file (e.g., `index.html`).
 
 ## Visible contents go between **`<body> </body>`**
 
@@ -70,8 +72,8 @@ There are 6 levels of heading `<h1>` through `<h6>`; `<h1>` is biggest/first-lev
 |    |           |
 |:---|:----------|
 | A link to <a href = "https://www.google.com">Google</a>| `<a href="https://www.google.com">Google</a>`|
-| An image <img src="images/lamp.jpg" width=32px>| `<img src="images/lamp.jpg" width=32px>`  |
-| Another image <img src="images/lamp.jpg" width=10%>| `<img src="images/lamp.jpg" width=10%>`  |
+| An image <img src="images/lamp.jpg" width=32px>| `<img src="lamp.jpg" width=32px>`  |
+| Another image <img src="images/lamp.jpg" width=10%>| `<img src="lamp.jpg" width=10%>`  |
 
 You can specify the size of an image in either *absolute* unit (`px` for pixels) or *relative* unit (`%`).
 
@@ -143,7 +145,7 @@ h1 {
 
 * <p style="color:#4444a4; text-shadow: 1px 1px 2px pink; font-size:1.5rem; line-height:2.0rem; background-image: url(images/lamp.jpg)">background image</p> 
 
-  `background-image: url(images/lamp.jpg);`
+  `background-image: url(lamp.jpg);`
 
 [^1]: You can use <https://cssgradient.io> to help create a background gradient.
 
