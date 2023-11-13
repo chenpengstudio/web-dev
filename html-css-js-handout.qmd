@@ -120,3 +120,4 @@ h1 {color: blue; font-size: 12px;}
 * It is a programing language. I will not cover JavaScript in this class.
 * Learn some [JavaScript basics](https://www.geeksforgeeks.org/javascript-cheat-sheet-a-basic-guide-to-javascript/) on Geeks for Geeks
 * Check out [JavaScript tutorial](https://www.w3schools.com/js/default.asp) on W3Schools
+* Check out [**p5.js**](https://p5js.org/) for creative coding; some student work examples can be seen [**here**](https://chenpengstudio.github.io/p5js-student-show/).
